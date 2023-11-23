@@ -11,5 +11,5 @@
     ;; Not sure if I want to use the merge strategy of
     ;; `tim/merge-config!`. I'll have to experiment and see if it's
     ;; appropriate or not.
-    (tim/merge-config! (select-keys-by-ns ctx "timbre"))
+    (tim/merge-config! (update-keys (select-keys-by-ns ctx "timbre") (comp keyword name)))
     (update ctx :biff/stop conj #(tim/set-config! config-before))))

@@ -1,1 +1,2 @@
-{:deps {com.taoensso/timbre {:mvn/version "6.3.1"}}}
+{:deps {com.taoensso/timbre {:mvn/version "6.3.1"}
+        com.fzakaria/slf4j-timbre {:mvn/version "0.4.1"}}}

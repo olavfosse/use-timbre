@@ -12,4 +12,4 @@
     ;; `tim/merge-config!`. I'll have to experiment and see if it's
     ;; appropriate or not.
     (tim/merge-config! (select-keys-by-ns config "timbre"))
-    (update ctx :biff/stop conj #(tim/set-config config-before))))
+    (update ctx :biff/stop conj #(tim/set-config! config-before))))
